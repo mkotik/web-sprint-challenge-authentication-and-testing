@@ -3,7 +3,7 @@ const cors = require("cors");
 const helmet = require("helmet");
 // const session = require("express-session");
 // const KnexSessionStore = require("connect-session-knex")(session);
-const dbConfig = require("../data/dbConfig");
+// const dbConfig = require("../data/dbConfig");
 const restrict = require("./middleware/restricted.js");
 
 const authRouter = require("./auth/auth-router.js");

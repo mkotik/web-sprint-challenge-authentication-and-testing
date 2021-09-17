@@ -10,10 +10,8 @@ router.post("/register", async (req, res, next) => {
   try {
     const newUser = await Users.addUser({ username, password: hash });
     res.status(201).json(newUser);
-    res.end("implement register, please!");
   } catch (err) {
     next(err);
-    res.end("implement register, please!");
   }
   /*
     IMPLEMENT
