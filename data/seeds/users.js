@@ -1,6 +1,8 @@
+const bcrypt = require("bcryptjs");
+
 const users = [
-  { username: "mkotik", password: "pass" },
-  { username: "bob", password: "saget" },
+  { username: "mkotik", password: bcrypt.hashSync("pass", 8) },
+  { username: "bob", password: bcrypt.hashSync("saget", 8) },
 ];
 
 exports.users = users;
